@@ -10,105 +10,153 @@
         crossorigin="anonymous">
     <script src="main.js"></script>
     <style>
+        .navName {
+            margin-left: 120px;
+            padding: 15px 30px 15px 30px;
+            background: #4aaaa5;
+            color: white;
+        }
+
         body {
-            background-image: url(images/vintage-concrete.png);
+            background-image: url("images/concrete_seamless.png");
         }
 
-        #footer {
-            bottom: 0;
-            width: 100%;
-            position: absolute;
-            height: height-footer;
-            background-color: #fc0404;
+        li {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        .container {
+            background: white;
+            padding: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #line-break {
+            margin-top: 30px;
+        }
+
+        .link-icons {
             text-align: center;
-            border-top: solid black;
-            margin-bottom: 0%;
-            text-decoration-color: black;
+            margin-bottom: 10px;
+            padding-left: 15px;
         }
 
-        .images {
-            float: left;
+        #hr {
+            text-decoration-line: 3px solid;
+            color: black;
         }
 
-        .navbar-nav {
-            float: right;
+        h2 {
+            color: #4aaaa5;
+        }
+
+
+        footer {
+            width: 100%;
+            background: #4aaaa5;
+            color: white;
+            text-align: center;
+            border-top: 3px solid black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-style: solid;
+            position: absolute;
+            bottom: 0%;
+            margin-bottom: 0;
+        }
+
+        html {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            min-height: 100%;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Joshua Haarer</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">About &emsp; |
-                    <span class="sr-only">(current)</span>
-                </a>
-                <a class="nav-item nav-link" href="#">Portfolio &emsp; |</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
+
+    <nav class="navbar navbar-light" style="background-color: white;">
+
+        <span class="navbar-brand mb-0 h1">
+            <div class="navName">
+                <h1>Joshua Haarer</h1>
             </div>
-        </div>
+        </span>
+        <ul class="nav justify-content-end">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">About &emsp; |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Portfolio.html">Portfolio &emsp; |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+        </ul>
 
     </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div id="line-break"></div>
         </div>
         <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam iusto laborum corporis! Pariatur at vitae quae
-                    perferendis fuga ea quasi animi doloremque? Qui ducimus in odio provident praesentium quam error?</p>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <p class="footer-block">
-                <div class="images">
-                    <img src="images/github.png" width="25px" height="25px" alt="">
-                    <img src="images/linkedin.png" width="25px" height="25px" alt="">
-                    <img src="images/stack.png" width="25px" height="25px" alt="">
+            <div class="col-2"></div>
+            <div class="col-5">
+                <div class="container">
+                    <div class="row">
+                        <h2>About</h2>
+                    </div>
+                    <div id="hr"></div>
+                    <div class="row">
+                        <img src="images/profile.jpg" width="150px" height="150px" alt="">
+                    </div>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis nam ab. Nemo impedit nisi harum!
+                        Molestias, labore repudiandae quia maxime nobis esse sapiente ea assumenda quidem adipisci iste vero?
+                    </span>
                 </div>
-                <strong>This is my attempt at a sticky footer</strong>
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <div class="row">
+                        <h2>Connect With Me</h2>
+                    </div>
+                    <br>
+                    <div id="hr"></div>
+                    <div class="row">
+                        <div class="link-icons">
+                            <a href="https://github.com/JoshuaHaarer">
+                                <img src="images/github.png" width="50px" height="50 px" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/in/joshua-haarer-5a47b4155/?trk=public-profile-join-page">
+                                <img src="images/linkedin.png" width="50px" height="50 px" alt="">
+                            </a>
+                            <a href="https://stackoverflow.com/">
+                                <img src="images/stack.png" width="50px" height="50 px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            </p>
-
+            </div>
+            <div class="col-2"></div>
         </div>
     </div>
 
 
 
 
+
+
+    <footer>
+        <div>© Copyright 2018 Joshua Haarer</div>
+    </footer>
 </body>
 
 

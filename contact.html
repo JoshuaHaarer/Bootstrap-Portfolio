@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="main.js"></script>
+    <style>
+        .navName {
+            margin-left: 120px;
+            padding: 15px 30px 15px 30px;
+            background: #4aaaa5;
+            color: white;
+        }
+
+        body {
+            background-image: url("images/concrete_seamless.png");
+        }
+
+        li {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        .container {
+            background: white;
+        }
+
+        #line-break {
+            margin-top: 30px;
+        }
+
+        .link-icons {
+            text-align: center;
+            margin-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        #hr {
+            text-decoration-line: 3px solid;
+            color: black;
+        }
+
+        h2 {
+            color: #4aaaa5;
+        }
+
+
+        footer {
+            width: 100%;
+            background: #4aaaa5;
+            color: white;
+            text-align: center;
+            border-top: 3px solid black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-style: solid;
+            position: absolute;
+            bottom: 0%;
+            margin-bottom: 0;
+        }
+
+        html {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            min-height: 100%;
+        }
+        .row-fluid {
+            display: flex;
+        }
+        .col-fluid {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: white;">
+
+        <span class="navbar-brand mb-0 h1">
+            <div class="navName">
+                <h1>Joshua Haarer</h1>
+            </div>
+        </span>
+        <ul class="nav justify-content-end">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About &emsp; |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio &emsp; |</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- break line -->
+    <div class="row">
+        <div class="col-12">
+            <div id="line-break"></div>
+        </div>
+    </div>
+    <!-- body containers -->
+    <div class="row">
+        <!-- left column -->
+        <div class="col-1"></div>
+        <!-- contact info -->
+        <div class="col-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                    <h2>Contact</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-12">
+                        <form action="action_page.php">
+
+                            <label for="fname">Name</label>
+                            <div class="row">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            </div>
+                            <label for="lname">Email</label>
+                            <div class="row">
+                                <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+                            </div>
+                            <label for="subject">Message</label>
+                            <div class="row">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="container">
+            <div class="row">
+                <h2>Connect With Me</h2>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="link-icons">
+                    <a href="https://github.com/JoshuaHaarer">
+                        <img src="images/github.png" width="50px" height="50 px" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/joshua-haarer-5a47b4155/?trk=public-profile-join-page">
+                        <img src="images/linkedin.png" width="50px" height="50 px" alt="">
+                    </a>
+                    <a href="https://stackoverflow.com/">
+                        <img src="images/stack.png" width="50px" height="50 px" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-2"></div>
+    <div class "row">
+        <div class="col-12">
+            <div id="line-break"></div>
+            <div id="line-break"></div>
+            <div id="line-break"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div>© Copyright 2018 Joshua Haarer</div>
+    </footer>
+</body>
+
+
+
+</html>
